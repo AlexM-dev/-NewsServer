@@ -32,7 +32,7 @@ func (api *API) endpoints() {
 	api.router.HandleFunc("/posts", api.deletePostHandler).Methods(http.MethodDelete, http.MethodOptions)
 }
 
-// Получение маршрутизатора запросов.
+// Router Получение маршрутизатора запросов.
 // Требуется для передачи маршрутизатора веб-серверу.
 func (api *API) Router() *mux.Router {
 	return api.router
